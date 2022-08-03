@@ -9,6 +9,8 @@ Meus estudos em Html e WebDesign
 
 [Exemple-tables](https://denenewton.github.io/HTML/Html/Tabelas)
 
-[Exemple-javaScript-1](https://denenewton.github.io/HTML/Html/Figura6)
+[Exemple-formulario](https://denenewton.github.io/HTML/Html/Figura6)
+
+[Exemple-javaScript-1](https://denenewton.github.io/HTML/Html/Figura2)
 
 
