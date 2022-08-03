@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var numero1 = prompt("Insira o priméiro número");
+      var numero2 = prompt("Insira o segundo número");
+
+      function divida(n1, n2) {
+        let resultado = 0;
+        resultado = parseInt(n1 / n2);
+        return resultado;
+      }
+
+      var resultadoDivisao = divida(numero1, numero2);
+
+      alert(
+        "Resultado da divisão entre os números fornecidos: " + resultadoDivisao
+      );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas</title>
+    <style>
+      *,
+      *::after,
+      *::before {
+        margin: 0;
+      }
+      html{
+        font-size:100%;
+      }
+      h1{
+        text-align: center;
+        line-height: 2;
+      }
+      h1,
+      h2,
+      h2 {
+        text-align: center;
+        line-height: 1.7;
+        color: #444;
+      }
+      main {
+        background-color: rgba(54, 54, 61, 0.276);
+        max-width: 928px;
+        margin: 0 auto;
+      }
+      section {
+        margin-bottom: 1rem;
+        margin-top: 3rem;
+        padding: 1rem 0 1rem 0;
+      }
+      table {
+        width: 50%;
+        border-collapse: collapse;
+        margin: 0 auto;
+        margin-top: .5rem;
+      }
+      table,
+      th,
+      td {
+        color: rgb(58, 58, 58);
+        border: 1px solid #888;
+        padding: 0.5rem 1rem;
+      }
+      th {
+        background-color: #444;
+        color: #fff;
+        border-top: #444;
+      }
+      th:not(:last-child) {
+        border-right: 1px solid #fff;
+      }
+      section.video, section.audio{
+        margin: 0 auto;
+        max-width: 50%;
+      }
+      video,audio{
+        margin-top: .5rem;
+        width: 100%;
+      }
+     
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <h1>Tabelas</h1>
+      <section>
+        <h2>Tabela Simples</h2>
+        <table>
+          <tr>
+            <td>Daniel Santos</td>
+            <td>HTML</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Anna Gabriela</td>
+            <td>HTML</td>
+            <td>10</td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <h2>Tabela Com titulo</h2>
+        <table>
+          <tr>
+            <th>Aluno</th>
+            <th>Disciplina</th>
+            <th>Nota</th>
+          </tr>
+          <tr>
+            <td>Daniel Santos</td>
+            <td>HTML</td>
+            <td>9.8</td>
+          </tr>
+          <tr>
+            <td>Anna Gabriela</td>
+            <td>HTML</td>
+            <td>9.9</td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <h2>Tabela Mais Completa</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Aluno</th>
+              <th>Disciplina</th>
+              <th>Nota</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Grabriel Smith</td>
+              <td>JavaScript</td>
+              <td>9.7</td>
+            </tr>
+            <tr>
+              <td>Daniel Santos Araújo</td>
+              <td>PHP</td>
+              <td>8.9</td>
+            </tr>
+            <tr>
+              <td>Anna Gabriela</td>
+              <td>CSS3</td>
+              <td>8.8</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Turma Web Programming 2022</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+      <section class="video">
+        <h2>Video</h2>
+        
+        <video
+          src="https://cloclo54.cloud.mail.ru/weblink/view//Wukh/ooJgbBPha"
+          controls
+        ></video>
+      </section>
+      <section class="audio">
+        <h2>Audio</h2>
+        <audio src="audio.mp3" controls  loop></audio>
+      </section>
+    </main>
+  </body>
+</html>
