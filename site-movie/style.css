@@ -1,0 +1,31 @@
+main{
+    max-width: 920px;
+    margin: 0 auto;
+}
+section.movies{
+    max-width: inherit;
+}
+div.movie{
+    display: flex;
+    column-gap: 2rem;
+    min-height: 250px;
+    margin-bottom: 0.5rem;
+}
+.image{
+   width: 320px;
+   height: 190px;   
+}
+.image img {
+    width: inherit;
+    height: inherit;
+    border-radius: 15px;
+    object-fit:fill;
+    border: 1px solid #ccc;
+}
+div.description{
+    font-size: 1rem;
+}
+div.description span{
+   font-size: 1rem;
+  font-weight: 100;
+}
