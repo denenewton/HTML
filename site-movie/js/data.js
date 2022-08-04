@@ -804,5 +804,105 @@ export const data = [
     createdAt: "2022-07-31T22:42:14.471Z",
     __v: 0,
   },
+  //add recentemente
+  {
+    _id: "62e705460873200ed143143r",
+    name: "The Healer",
+    url: "https://cloclo51.cloud.mail.ru/weblink/view//DQSG/JKPQdFEBy",
+    image: "./image/TheHealer.jpeg",
+    category: "drama",
+    director: "Paco Arango",
+    year: "2018",
+    comments:
+      "The Healer is a 2016 Spanish-Canadian-American comedy-drama film written and directed by Paco Arango and starring Oliver Jackson-Cohen, Camilla Luddington, Kaitlyn Bernard, Jorge Garcia and Jonathan Pryce. ",
+    createdAt: "2022-07-31T22:42:14.471Z",
+    __v: 0,
+  },
+  {
+    _id: "62e705460873200ed143143fse",
+    name: "Segurança de Shopping",
+    url: "https://cloclo59.cloud.mail.ru/weblink/view//a4Rq/hUwWYKTCB",
+    image: "./image/o-seguranca-do-shopping.jpeg",
+    category: "comedia",
+    director: "Steve Carr",
+    year: "2009",
+    comments:
+      "Paul, a single dad who makes ends meet by working as a security guard at a mall, must save the day after thieves, dressed as Santa's employees, take over the mall.",
+    createdAt: "2022-07-31T22:42:14.471Z",
+    __v: 0,
+  },
+  {
+    _id: "62e705460873200ed143143fsfw33",
+    name: "Segurança de Shopping II",
+    url: "https://cloclo57.cloud.mail.ru/weblink/view//96wH/MdjQCJxnB",
+    image: "./image/seguranca-de-shopping-2.jpeg",
+    category: "comedia",
+    director: "Andy Fickman",
+    year: "2015",
+    comments:
+      "Paul Blart, a security guard who saved a mall from criminals, earns a trip to Las Vegas. While on the vacation, Paul learns that the hotel he is staying at is in danger and steps up to save the day.",
+    createdAt: "2022-07-31T22:42:14.471Z",
+    __v: 0,
+  },
+  {
+    _id: "62e705460873200ed143143fs342lj",
+    name: "Não Sei Como Ela Consegue",
+    url: "https://cloclo59.cloud.mail.ru/weblink/view//bHka/mZztX5B65",
+    image: "./image/nao-sei-como-ela-consegue.jpeg",
+    category: "romance",
+    director: "Douglas McGrath",
+    year: "2011",
+    comments:
+      "Kate Reddy, a banking professional, constantly struggles to manage her work and family. When a friend offers her a better job, she is torn between settling for a better wage and her children.",
+    createdAt: "2022-07-31T22:42:14.471Z",
+    __v: 0,
+  },
+  {
+    _id: "62e705460873200fs4d143143fs342lj",
+    name: "Salt",
+    url: "https://cloclo1.cloud.mail.ru/weblink/view//SWyw/FjG4wLU2D",
+    image: "./image/salt.jpeg",
+    category: "ficção",
+    director: "Phillip Noyce",
+    year: "2010",
+    comments:
+      "CIA agent Evelyn Salt's life takes an ugly turn when she is accused of planning the assassination of the Russian president. However, she flees and sets out to prove her innocence.",
+    createdAt: "2022-07-31T22:42:14.471Z",
+    __v: 0,
+  },
+  {
+    _id: "62e7fdsesdf60873200ed143143fs3342lj",
+    name: "Legalmente Loira",
+    url: "https://cloclo50.cloud.mail.ru/weblink/view//dZC7/f3vfJ7d4g",
+    image: "./image/legalmente-loira.jpeg",
+    category: "romance",
+    director: "Robert Luketic",
+    year: "2001",
+    comments:
+      "Elle's boyfriend breaks up with her for a smarter girl as he plans to become a politician and joins Harward law school. Elle gets enrolled in the same school in an effort to teach him a lesson.",
+    createdAt: "2022-07-31T22:42:14.471Z",
+    __v: 0,
+  },
+  {
+    _id: "62e7fdsesdf6054300ed143143fs3342lj",
+    name: "Race to Witch Mountain ",
+    url: "https://cloclo21.cloud.mail.ru/weblink/view//zXDD/DU4zPC7b1",
+    image: "./image/AMontanhaEnfeitiçada.jpeg",
+    category: "ficção",
+    director: "Andy Fickman",
+    year: "2009",
+    comments:
+      "Jack, a taxi driver, finds himself helping two aliens who appear to look like human children and claim that they trying to save Earth and themselves from Siphon, a dangerous killer from outer space.",
+    createdAt: "2022-07-31T22:42:14.471Z",
+    __v: 0,
+  },
 ];
+
+
+
+
+
+ 
+
+
 
