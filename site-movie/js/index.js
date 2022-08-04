@@ -6,20 +6,23 @@ const searchElem = document.getElementById("search");
 
 component.movieHtml(data);
 
-searchElem.addEventListener("change", () => {
+searchElem.addEventListener("change", function() {
 
   const results = data.filter(component.filtro);
-
+ 
   if (results.length == 0) {
     movieDiv.innerHTML = "<h3>Movie not found in data</h3>";
-    if (search.trim() === "") {
+    searchElem.value = ''
+    if (search.trim() == "") {
       movieDiv.innerHTML = "";
       component.movieHtml(data);
     }
   } else {
     movieDiv.innerHTML = "";
     component.movieHtml(results);
+    searchElem.value = ''
   }
+  
 });
 
 

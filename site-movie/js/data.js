@@ -40,7 +40,7 @@ export const data = [
   },
   {
     _id: "62dd6fde21e57fe7d158ffa6",
-    name: "THE DUFF",
+    name: "The D.U.F.F",
     url: "https://cloclo13.cloud.mail.ru/weblink/view//H3K3/SogVCsj82",
     image: "./image/DUFF.jpeg",
     category: "comedia",
@@ -131,7 +131,7 @@ export const data = [
   },
   {
     _id: "62dd747821e57fe7d158ffb5",
-    name: "No Pique de Nova York",
+    name: "New York Minute",
     url: "https://cloclo60.cloud.mail.ru/weblink/view//qu4M/hGAED3Hcc",
     image: "./image/NewYorkMinute.jpeg",
     category: "drama",
@@ -300,7 +300,7 @@ export const data = [
   },
   {
     _id: "62df1fc8f6d44412d237dff4",
-    name: "Homens de Preto",
+    name: "Men in Black I",
     url: "https://cloclo55.cloud.mail.ru/weblink/view//7Xrg/PEcNSFoRx",
     image: "./image/HomensPreto.jpeg",
     category: "ficção",
@@ -313,7 +313,7 @@ export const data = [
   },
   {
     _id: "62df2026f6d44412d237dff6",
-    name: "Homens de Preto 2",
+    name: "Men in Black II",
     url: "https://cloclo50.cloud.mail.ru/weblink/view//WCTh/Vuf7QJ7f5",
     image: "./image/HomensPreto2.jpeg",
     category: "ficção",
@@ -326,7 +326,7 @@ export const data = [
   },
   {
     _id: "62df2078f6d44412d237dff8",
-    name: "Homens de Preto 3",
+    name: "Men in Black III",
     url: "https://cloclo50.cloud.mail.ru/weblink/view//4LA3/y4jjFabWr",
     image: "./image/HomensPreto3.jpeg",
     category: "ficção",

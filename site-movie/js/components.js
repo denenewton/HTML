@@ -23,10 +23,10 @@ export function movieHtml(results) {
 }
 
 export const filtro = (m) => {
-    const firstWord = m.name.split("");
+    const firstChar = m.name.split("");
     const search = searchElem.value;
     if (search.trim() === '') return [];
-    if (firstWord[0].toLocaleLowerCase() === search.split("")[0].toLowerCase()) {
+    if (firstChar[0].toLocaleLowerCase() === search.split("")[0].toLowerCase()) {
       return m;
     } else return;
   };
