@@ -1,63 +1,107 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    color: #222;
+
+html{
+  font-size: 100%;
+}  
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+}
+div.container{
+    max-width: 928px;
+    margin: 0 auto;
+    padding: 0 .4rem;
+}
+main{
+  padding: 4rem 1rem;
+  background-color: #eee;
+}
+section.movies {
+  max-width: inherit;
 }
 
-main{
-    max-width: 920px;
-    margin: 0 auto;
-}
-section.movies{
-    max-width: inherit;
-}
-div.movie{
+div.header{
     display: flex;
-    column-gap: 2rem;
-    min-height: 250px;
-    margin-bottom: 0.5rem;
+    justify-content: space-between;
 }
-.image{
-   width: 320px;
-   height: 190px;   
+.barra-vertical{
+    border-bottom: 10px rgb(73, 73, 73) solid;
+}
+
+div.movie {
+  display: flex;
+  column-gap: 2rem;
+  min-height: 250px;
+  margin-bottom: 0.5rem;
+}
+.image {
+  width: 320px;
+  height: 190px;
 }
 .image img {
-    width: inherit;
-    height: inherit;
-    border-radius: 15px;
-    object-fit:fill;
-    border: 1px solid #ccc;
+  width: inherit;
+  height: inherit;
+  border-radius: 15px;
+  object-fit: fill;
+  border: 1px solid #ccc;
 }
-div.description{
-    font-size: 1rem;
+div.description {
+  font-size: 1rem;
 }
-div.description a{
-    text-decoration: none;
+div.description h2 {
+  margin-top: 0.45rem;
 }
-div.description a:hover{
-    text-decoration: underline;
+div.description h4 {
+    margin-top: -0.77rem;
+  }
+div.description a {
+  text-decoration: none;
+}
+div.description a:hover {
+  text-decoration: underline;
 }
 div.description a:link,
 div.description a:active,
-div.description a:visited  { 
-    color: #222;
+div.description a:visited {
+  color: #222;
 }
 
-div.description span{
-   font-size: 1rem;
+div.description span {
+  font-size: 1rem;
   font-weight: 100;
 }
 
-div.search{
-  min-height: 50px;
+div.search {
   display: flex;
   flex-direction: row-reverse;
-  align-items:center;
+  align-items: center;
 }
-div.search input{
-    align-self: center;
-    height: 30px;
-    margin-left: .7rem;
+div.search input {
+  align-self: center;
+  height: 30px;
+  margin-left: 0.7rem;
 }
-div.search label{
-    font-size: 1.3rem;
+div.search label {
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 600px) {
+  html{
+    font-size: 98%;
+  }
+  div.movie {
+    margin-bottom: 2.25rem;
+    max-width: 600px;
+    flex-direction: column;
+  }
+  div.description h2 {
+    margin-top: 0.7rem;
+  }
+  div.description h4 {
+    margin-top: -1rem;
+  }
+  .image {
+    width: 100%;
+    height: auto;
+  }
 }
