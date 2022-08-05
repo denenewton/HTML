@@ -1,4 +1,3 @@
-
 const movieDiv = document.querySelector(".movies");
 const searchElem = document.getElementById("search");
 
@@ -25,10 +24,24 @@ export function movieHtml(results) {
 export const filtro = (m) => {
     const firstChar = m.name.split("");
     const search = searchElem.value;
-    if (search.trim() === '') return [];
+    if (search.trim() === '') return []; //retorna o vetor original 
     if (firstChar[0].toLocaleLowerCase() === search.split("")[0].toLowerCase()) {
       return m;
-    } else return;
+    }else return //retorna um vetor vazio
   };
+ 
 
+
+export function paginate(vetor, pages, limits) {
+  const page = pages;
+  const limit = limits;
+
+  const startIndex = (page - 1) * limit;
+  const endIndex = page * limit;
+
+  let results = [];
+
+  results = vetor.slice(startIndex, endIndex);
+  return results;
+}
 
