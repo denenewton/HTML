@@ -1,31 +1,43 @@
 
 html{
   font-size: 100%;
+  
 }  
 
 body {
+  background-image: url('../image/fundo.jpg');
+  background-attachment: fixed;
+  background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
   color: #222;
+  box-sizing: border-box;
 }
 div.container{
     max-width: 928px;
     margin: 0 auto;
-    padding: 0 .4rem;
 }
 main{
   padding: 4rem 1rem;
   background-color: #eee;
+  margin-top: .6rem;
 }
 section.movies {
   max-width: inherit;
 }
-
+header{
+  height: 5.5rem;
+  background-color: #fff;
+}
 div.header{
+    height: inherit;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 0.75rem;
 }
 .barra-vertical{
-    border-bottom: 10px rgb(73, 73, 73) solid;
+  border-bottom: 10px rgb(73, 73, 73) solid;
 }
 
 div.movie {
@@ -82,20 +94,27 @@ div.search input {
   margin-left: 0.7rem;
 }
 div.search label {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 @media screen and (max-width: 600px) {
   html{
     font-size: 98%;
   }
+  div.header{
+    padding: 0 0.7rem;
+}
+  div.header h1{
+    font-size: 1.7rem ;
+}
   div.movie {
     margin-bottom: 2.25rem;
     max-width: 600px;
     flex-direction: column;
   }
+  
   div.description h2 {
-    margin-top: 0.7rem;
+    margin-top: 0  0.55rem;
   }
   div.description h4 {
     margin-top: -1rem;
