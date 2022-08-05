@@ -18,7 +18,7 @@ div.container{
     margin: 0 auto;
 }
 main{
-  padding: 4rem 1rem;
+  padding: 4rem 1.25rem;
   background-color: #eee;
   margin-top: .6rem;
 }
@@ -34,7 +34,7 @@ div.header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 0.75rem;
+    padding: 0 1.15rem;
 }
 .barra-vertical{
   border-bottom: 10px rgb(73, 73, 73) solid;
@@ -102,13 +102,13 @@ div.search label {
     font-size: 98%;
   }
   div.header{
-    padding: 0 0.7rem;
+    padding: 0 0.85rem;
 }
   div.header h1{
     font-size: 1.7rem ;
 }
   div.movie {
-    margin-bottom: 2.25rem;
+    margin-bottom: 2.35rem;
     max-width: 600px;
     flex-direction: column;
   }
