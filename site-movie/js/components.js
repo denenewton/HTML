@@ -2,7 +2,7 @@ const movieDiv = document.querySelector(".movies");
 const searchElem = document.getElementById("search");
 
 export function movieHtml(results) {
-    movieDiv.innerHTML += `${results
+    movieDiv.innerHTML = `${results
         .map((mov) => {
             return `
                     <div class="movie">
@@ -40,8 +40,8 @@ export function paginate(vetor, pages, limits) {
   const endIndex = page * limit;
 
   let results = [];
-
   results = vetor.slice(startIndex, endIndex);
+  
   return results;
 }
 

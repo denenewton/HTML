@@ -54,7 +54,7 @@ div.header > h1{
 }
 .barra-vertical{
   margin-top: -.69rem;
-  border-bottom: 10px rgb(73, 73, 73) solid;
+  border-bottom: 10px #494949 solid;
 }
 
 div.movie {
@@ -112,6 +112,34 @@ div.search input {
 }
 div.search label {
   font-size: 1.2rem;
+}
+
+div.changePages{
+  max-width: 350px;
+  height: 20px;
+  padding:0 .5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+div.changePages a{
+  font-size: 1.1rem;
+  display: block;
+  color: #222;
+  padding: .7rem .8rem;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all .1s;
+  box-sizing: border-box;
+}
+div.changePages a:hover{
+  border:2px solid #494949;
+}
+div.pontos{
+  width: 38px;
 }
 
 @media screen and (max-width: 600px) {
