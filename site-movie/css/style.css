@@ -109,6 +109,7 @@ div.search input {
   align-self: center;
   height: 30px;
   margin-left: 0.7rem;
+  outline: none;
 }
 div.search label {
   font-size: 1.2rem;
@@ -169,5 +170,11 @@ div.pontos{
   .image {
     width: 100%;
     height: auto;
+  }
+}
+
+@media screen and (max-width: 600px){
+  div.header h1{
+    font-size: 1.45rem;
   }
 }
