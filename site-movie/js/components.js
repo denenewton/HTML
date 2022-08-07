@@ -21,6 +21,9 @@ export function movieHtml(results) {
     .join("")}`;
 }
 
+
+
+
 export const filtro = (m) => {
   const firstChar = m.name.split("");
   const search = searchElem.value;
@@ -44,7 +47,7 @@ export function paginate(vetor, pages, limits) {
 
 export function paginaCorrente(data, page, limit) {
   movieHtml(paginate(data, page, limit));
-  
+
   $("#nextPage").click(function () {
     page++;
     movieHtml(paginate(data, page, limit));
