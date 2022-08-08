@@ -9,11 +9,13 @@ $(document).ready(function () {
   component.paginaCorrente(data, page, limit);
 
   $("#search").change(function () {
-    
+    $(".movies").html("");
+
     let termo = this.value;
     let expressaoReg = RegExp(termo.trim(), "i");
 
     console.log(expressaoReg);
+    
     $(".changePages").hide(); // ocultar o link nextPage
     const results = data.filter((elem) => {
       if (expressaoReg.test(elem.name)) return elem;
@@ -27,12 +29,11 @@ $(document).ready(function () {
       $("#search").val("");
     }
     if (results.length === data.length) {
-      $(".movies").html();
+      
       component.movieHtml(component.paginate(data, 1, 3));
       $(".changePages").show();
     }
     if (results.length < data.length && results.length > 0) {
-      $(".movies").html();
       component.movieHtml(results);
       $("#search").val("");
     }
