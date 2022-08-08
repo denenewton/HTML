@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="texto" />
+
+    <ul id="elemento"></ul>
+
+    <script src="jquery-3.6.0.js"></script>
+
+    <script>
+      var paises = [
+        { name: "Brasil do meu " },
+        { name: "Canada" },
+        { name: "China" },
+        { name: "Japão" },
+        { name: "Estados Unidos" },
+        { name: "Iglaterra" },
+        { name: "Mexico" },
+      ];
+
+      $("#texto").on("change", function () {
+        $("#elemento").html("");
+        let termo = this.value;
+        let expressaoReg = RegExp(termo, "i");
+        console.log(expressaoReg, paises[0].name);
+
+        for (const i in paises) {
+          if (expressaoReg.test(paises[i].name)) {
+            $("#elemento").append("<li>" + paises[i].name + "</li>");
+            console.log(expressaoReg.test(paises[i].name));
+          } else {
+            //console.log(paises[i].name.match(teste));
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

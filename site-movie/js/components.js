@@ -22,13 +22,11 @@ export function movieHtml(results) {
 }
 
 
-
-
 export const filtro = (m) => {
   const firstChar = m.name.split("");
   const search = searchElem.value;
   if (search.trim() === "") return []; //retorna o vetor original
-  if (firstChar[0].toLocaleLowerCase() === search.split("")[0].toLowerCase()) {
+  if (firstChar[0].toLowerCase() === search.split("")[0].toLowerCase()) {
     return m;
   } else return; //retorna um vetor vazio
 };

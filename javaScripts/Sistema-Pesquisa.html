@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistem Pesquisa</title>
+  </head>
+  <body>
+    <input type="text" id="pesquisa" />
+
+    <ul id="lista">
+      Países
+    </ul>
+
+    <script>
+      const pesquisa = document.getElementById("pesquisa");
+      const lista = document.getElementById("lista");
+      var t = "";
+
+      paises = [
+        "Brasil",
+        "Canada",
+        "China",
+        "Japão",
+        "Estados Unidos",
+        "Iglaterra",
+        "Mexico",
+      ];
+
+      function preecheLista(vetor) {
+      
+        for (i in vetor) {
+          t += "<li>" + vetor[i] + "</li>";
+          vetor[i] = vetor[i].toLowerCase();
+        }
+        lista.innerHTML = t;
+      }
+
+      function pesquisaNoImput(paises) {
+        pesquisa.onkeyup = function (e) {
+          const term = this.value;
+          
+          formaRegularDoTerm = new RegExp(term.toLowerCase(), "g");
+
+          for (i in paises) {
+            //console.log(paises[i].match(formaRegularDoTerm))
+            if (paises[i].match(formaRegularDoTerm))
+              lista.children[i].removeAttribute("style");
+            else lista.children[i].style.display = "none";
+
+          }
+        };
+      }
+      preecheLista(paises);
+      pesquisaNoImput(paises);
+
+    </script>
+  </body>
+</html>
