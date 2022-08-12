@@ -56,3 +56,4 @@ export function paginaCorrente(data, page, limit) {
     movieHtml(paginate(data, page, limit));
   });
 }
+

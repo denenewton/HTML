@@ -1,8 +1,10 @@
-import { data } from "./data.js";
+import { dataMovies } from "./data.js";
 import * as component from "./components.js";
 
-$(document).ready(function () {
+
+$(document).ready(async function () {
   $("#search").focus();
+  var data = await dataMovies();
   var page = 1;
   const limit = 4;
 
@@ -12,10 +14,10 @@ $(document).ready(function () {
     $(".movies").html("");
 
     let termo = this.value;
-    let expressaoReg = RegExp(termo.trim(), "i");
+    let expressaoReg = new RegExp(termo.trim(), "i");
 
     console.log(expressaoReg);
-    
+
     $(".changePages").hide(); // ocultar o link nextPage
     const results = data.filter((elem) => {
       if (expressaoReg.test(elem.name)) return elem;
@@ -29,7 +31,6 @@ $(document).ready(function () {
       $("#search").val("");
     }
     if (results.length === data.length) {
-      
       component.movieHtml(component.paginate(data, 1, 3));
       $(".changePages").show();
     }
