@@ -20,10 +20,12 @@ div.container{
 }
 main{
   padding: 0.3rem 1.25rem;
+  
 
 }
 .main{
    max-width: 900px;
+   min-height: 580px;
    margin: 0 auto;
    padding: 3rem 1rem;
    background-color: #fff;
@@ -41,7 +43,7 @@ header{
   margin-top: -5.5rem;
 }
 div.header{
-    max-width: 930px !important;
+    max-width: 930px;
     height: inherit;
     display: flex;
     justify-content: space-between;
@@ -144,6 +146,10 @@ div.pontos{
   width: 38px;
 }
 
+#not-found{
+  font-size: 1.3rem;
+  text-align: center;
+}
 @media screen and (max-width: 600px) {
   html{
     font-size: 98%;

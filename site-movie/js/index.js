@@ -24,7 +24,7 @@ $(document).ready(async function () {
     $(".changePages").hide(); // ocultar o link nextPage
 
     if (results.length === 0) {
-      $(".movies").html("<h3>Movie not found in data</h3>");
+      $(".movies").html("<h3 id='not-found'>Movie not found in data</h3>");
       $("#search").val("");
     }
     if (results.length === data.length) {
