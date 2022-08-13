@@ -1,27 +1,24 @@
 import { dataMovies } from "./data.js";
 import * as component from "./components.js";
 
+var data = await dataMovies();
 
 $(document).ready(async function () {
   $("#search").focus();
-  var data = await dataMovies();
   var page = 1;
   const limit = 4;
 
   component.paginaCorrente(data, page, limit);
 
   $("#search").change(function () {
+    $(".changePages").hide();
     $(".movies").html("");
 
     let termo = this.value;
     let expressaoReg = new RegExp(termo.trim(), "i");
 
-    console.log(expressaoReg);
-
-    $(".changePages").hide(); // ocultar o link nextPage
     const results = data.filter((elem) => {
-      if (expressaoReg.test(elem.name)) return elem;
-      else return;
+      return expressaoReg.test(elem.name);
     });
 
     $(".changePages").hide(); // ocultar o link nextPage

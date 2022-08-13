@@ -1,8 +1,5 @@
-const movieDiv = document.querySelector(".movies");
-const searchElem = document.getElementById("search");
-
 export function movieHtml(results) {
-  movieDiv.innerHTML = `${results
+  $('.movies').html(results
     .map((mov) => {
       return `
                     <div class="movie">
@@ -17,19 +14,9 @@ export function movieHtml(results) {
                     </div>
             
                 `;
-    })
-    .join("")}`;
+    }).join('')
+    )
 }
-
-
-export const filtro = (m) => {
-  const firstChar = m.name.split("");
-  const search = searchElem.value;
-  if (search.trim() === "") return []; //retorna o vetor original
-  if (firstChar[0].toLowerCase() === search.split("")[0].toLowerCase()) {
-    return m;
-  } else return; //retorna um vetor vazio
-};
 
 export function paginate(vetor, pages, limits) {
   const page = pages;
@@ -56,4 +43,3 @@ export function paginaCorrente(data, page, limit) {
     movieHtml(paginate(data, page, limit));
   });
 }
-
