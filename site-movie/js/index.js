@@ -28,7 +28,7 @@ $(document).ready(async function () {
       $("#search").val("");
     }
     if (results.length === data.length) {
-      component.movieHtml(component.paginate(data, 1, 3));
+      component.movieHtml(component.paginate(data, 1, 4));
       $(".changePages").show();
     }
     if (results.length < data.length && results.length > 0) {
