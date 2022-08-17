@@ -1,0 +1,74 @@
+html {
+    font-size: 16px;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  h1,
+  h2,
+  h2,
+  h2,
+  h5,
+  p {
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.5pt;
+  }
+
+  h1 {
+    color: #777;
+    text-align: center;
+    font-family: Poppins-Bold, Arial, Helvetica, sans-serif;
+    font-size: 1.7rem;
+    line-height: 1.8;
+    word-spacing: 0.75pt;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    position: relative;
+  }
+  h1::after {
+    content: "";
+    background-color: #777;
+    position: absolute;
+    top: 3rem;
+    left: 185px;
+    width: 100px;
+    height: 5px;
+  }
+  p {
+    margin-top: 1.5rem;
+    text-align: justify;
+  }
+  p.p00 {
+    font-family: Poppins-Regular, Arial, Helvetica, sans-serif;
+  }
+
+  p.p0 {
+    font-family: Poppins-Regular, Arial, Helvetica, sans-serif;
+  }
+
+  p.p1 {
+    font-family: Poppins-Regular, Arial, Helvetica, sans-serif;
+  }
+  p.p2 {
+    font-family: Poppins-Regular, Arial, Helvetica, sans-serif;
+  }
+  p.p3 {
+    font-family: Poppins-Regular, Arial, Helvetica, sans-serif;
+  }
+  p.p4 {
+    font-family: Poppins-Light, Arial, Helvetica, sans-serif;
+  }
+  p.p5 {
+    font-family: Poppins-Thin, Arial, Helvetica, sans-serif;
+  }
+</style>

@@ -127,6 +127,7 @@ div.changePages {
   align-items: center;
   box-sizing: border-box;
   margin: 0 auto;
+  
 }
 
 div.changePages a {
@@ -139,6 +140,7 @@ div.changePages a {
   transition: all 0.1s;
   box-sizing: border-box;
   border: 2px solid transparent;
+
 }
 div.changePages a:hover {
   border: 2px solid #494949;

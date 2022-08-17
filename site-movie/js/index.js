@@ -1,9 +1,11 @@
 import { dataMovies } from "./data.js";
 import * as component from "./components.js";
 
-var data = await dataMovies();
+$(".changePages").hide();
 
 $(document).ready(async function () {
+  var data = await dataMovies();
+  $(".changePages").show();
   $("#search").focus();
   var page = 1;
   const limit = 4;
