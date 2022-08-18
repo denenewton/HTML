@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search System</title>
+    <link rel="stylesheet" href="../site-movie/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <h1>My Movies</h1>
+        <div class="search">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Search for a movie"
+          />
+          <label for="search"></label>
+        </div>
+      </div>
+
+      <div class="barra-vertical"></div>
+    </header>
+
+    <main>
+      <div class="main">
+        <section class="movies" id="movies"></section>
+
+        <div class="changePages">
+          <a href="#" id="prevPage">&larr; Anterior</a>
+          <div class="pontos">&#9679; &#9679; &#9679;</div>
+          <a href="#" id="nextPage">Próximo &rarr;</a>
+        </div>
+      </div>
+    </main>
+
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+      elemMovie = document.getElementById('movies')
+      var page = 1
+      var limit = 3
+
+      fetch('https://62f58457ac59075124d272a8.mockapi.io/api/v1/movie')
+        .then(response => response.json())
+        .then(data => {
+          listandoResultados(data, page, limit)
+          searchMovies(data, page)
+          listandoResultados(data, page, limit)
+        })
+        .catch(err => console.log(err))
+
+      function listandoResultados(data, page, limit) {
+        const paises = paginate(data, page, limit)
+        $('.movies').html('')
+        for (const pais of paises) {
+          $('.movies').append(`
+          
+                <li class="movie">
+                    ${pais.name}
+                </li>    
+    
+          `)
+        }
+      }
+
+      function paginate(data, page, limit) {
+        const vetor = data.slice((page - 1) * limit, page * limit)
+        return vetor
+      }
+
+      function searchMovies(data, page, limit) {
+        $('#search').on('keyup', function () {
+          listandoResultados(data, page, data.length)
+          const term = this.value
+          const ExpRegularDoTerm = new RegExp(term, 'i')
+
+          for (const i in data) {
+            if (data[i].name.match(ExpRegularDoTerm)) {
+              elemMovie.children[i].removeAttribute('style')
+            } else elemMovie.children[i].style.display = 'none'
+            
+            if (data[i].name.match('')) {
+            listandoResultados(data, page, limit)
+          }
+          }
+          
+
+          console.log(term)
+        })
+      }
+    </script>
+  </body>
+</html>

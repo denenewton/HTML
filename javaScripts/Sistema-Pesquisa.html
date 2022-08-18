@@ -12,49 +12,49 @@
     <ul id="lista">
       Países
     </ul>
-
+    <script src="./jquery-3.6.0.js"></script>
     <script>
-      const pesquisa = document.getElementById("pesquisa");
-      const lista = document.getElementById("lista");
-      var t = "";
+      const lista =  document.getElementById('lista');
+      var t = ''
 
       paises = [
-        "Brasil",
-        "Canada",
-        "China",
-        "Japão",
-        "Estados Unidos",
-        "Iglaterra",
-        "Mexico",
-      ];
+        'Brasil',
+        'Canada',
+        'China',
+        'Japão',
+        'Estados Unidos',
+        'Iglaterra',
+        'Mexico',
+      ]
 
-      function preecheLista(vetor) {
-      
-        for (i in vetor) {
-          t += "<li>" + vetor[i] + "</li>";
-          vetor[i] = vetor[i].toLowerCase();
+     // function preecheLista(vetor) {
+        for (i in paises) {
+          $('#lista').append('<li>' + paises[i] + '</li>')
+          //t += '<li>' + paises[i] + '</li>'
+          //paises[i] = paises[i].toLowerCase()
         }
-        lista.innerHTML = t;
-      }
+        //$('#lista').html(t)
+    //  }
 
-      function pesquisaNoImput(paises) {
-        pesquisa.onkeyup = function (e) {
-          const term = this.value;
-          
-          formaRegularDoTerm = new RegExp(term.toLowerCase(), "g");
+     // function pesquisaNoImput(paises) {
+        $('#pesquisa').on('keyup', function (e) {
+          console.log(e.currentTarget);
+          const term = this.value
+
+          ExpRegularDoTerm = new RegExp(term.toLowerCase(), 'g')
 
           for (i in paises) {
-            //console.log(paises[i].match(formaRegularDoTerm))
-            if (paises[i].match(formaRegularDoTerm))
-              lista.children[i].removeAttribute("style");
-            else lista.children[i].style.display = "none";
-
+            //console.log(paises[i].match(ExpRegularDoTerm))
+            if (paises[i].match(ExpRegularDoTerm))
+              lista.children[i].removeAttribute('style')
+             // console.log(lista.children[i]);
+              
+            else lista.children[i].style.display = 'none'
           }
-        };
-      }
-      preecheLista(paises);
-      pesquisaNoImput(paises);
-
+        })
+    //  }
+     // preecheLista(paises)
+    //  pesquisaNoImput(paises)
     </script>
   </body>
 </html>
