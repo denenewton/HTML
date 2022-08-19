@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Parser YAML em Javascript</title>
+	<!-- Incorporando a biblioteca (de terceiros) que faz o parser yaml => javascript -->
+	<script type="text/javascript" src="yaml.js"></script>
+</head>
+<body>
+<p id="resultado"></p>
+<script type="text/javascript">
+
+//Cria um objeto Javacript
+var objtoJS  = {conta:{agencia: '5678-9', tipo: 'física', nome: 'Maria José', numero: '222.222-22'}};
+
+//Converte, com o parser, o objeto Javascript em texto YAML
+var yamlString = YAML.stringify(objtoJS);
+
+//Chamda a função download que possibilita o download do arquivo no formato YAML
+download(yamlString, 'cliente.yml', 'application/yaml');
+
+function download(content, fileName, contentType) {
+    var a = document.createElement("a");
+    var file = new Blob([content], {type: contentType});
+    a.href = URL.createObjectURL(file);
+    a.download = fileName;
+    a.click();
+}
+
+
+</script>
+</body>
+</html>

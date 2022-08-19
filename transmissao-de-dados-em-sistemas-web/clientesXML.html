@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      table {
+        border-collapse:collapse ;
+
+      }
+      td {
+        color: rgb(58, 58, 58);
+        border: 1px solid #888;
+        padding: 0.5rem 1rem;
+      }
+      th {
+        background-color: #444;
+        color: #fff;
+        border-top: #444;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="result"></p>
+
+    <script molule="true" type="text/javascript">
+      var xhttp = new XMLHttpRequest()
+      xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          trataXML(this.responseXML)
+        }
+      }
+      xhttp.open('GET', 'clientes.xml', true)
+      xhttp.send()
+
+      function trataXML(xmlObj) {
+        conta = xmlObj.getElementsByTagName('conta')[0]
+        filhoConta = conta.childNodes
+
+        var table = '<table>'
+        table += '<tr>'
+
+        for (const j in filhoConta) {
+          if (filhoConta[j].nodeType == 1) {
+            //Armazenando os nomes dos nós para serem usados como cabeçalho da tabela HTML
+            table += '<th>' + filhoConta[j].nodeName + '</th>'
+          }
+        }
+
+        table += '</tr>'
+
+        nosConta = xmlObj.getElementsByTagName('conta')
+        for (const i in nosConta) {
+          var child_nodes = nosConta[i].childNodes
+
+          table += '<tr>'
+
+          for (const j in child_nodes) {
+            if (child_nodes[j].nodeType === 1) {
+              console.log(child_nodes[j].firstChild.nodeValue)
+
+              table += (child_nodes[j].firstChild)
+                ? '<td>' + child_nodes[j].firstChild.nodeValue + '</td>'
+                : '<td>null</td>'
+            }
+          }
+
+          table += '</tr>'
+        }
+
+        table += '</table>'
+        document.getElementById('result').innerHTML += table
+      }
+    </script>
+  </body>
+</html>

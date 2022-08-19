@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 400px;
+        border-collapse: collapse;
+      }
+      td {
+        color: #444;
+        font-size: 16px;
+        padding: 0.5rem;
+        border: 1px solid #444;
+      }
+      th{
+        border: 1px solid #444;
+        background-color: #fff;
+        font-size: 18.5px;
+        padding: 0.5rem;
+        color: #444;
+        color: #444;
+      }
+      th.titleTable {
+        border: 1px solid #444;
+        background-color: #444;
+        font-size: 18.5px;
+        color: #dcdcdc;
+        padding: 0.5rem;
+      }
+      th{
+        background-color: #fff;
+        color: #444;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Correntistas</h1>
+
+    <table id="tabela"><tr><th class="titleTable" colspan="4">Contas</th></tr></table>
+
+    <script>
+      var xmlHttp = new XMLHttpRequest()
+      xmlHttp.onreadystatechange = function () {
+        if (this.readyState === 4 && this.status === 200) {
+          var response = this.responseText
+          console.log(response)
+          makeLista(response)
+        }
+      }
+      xmlHttp.open('GET', 'clientes.json', true)
+      xmlHttp.send()
+
+      const makeLista = resp => {
+        const data = JSON.parse(resp)
+        console.log(data.correntistas.conta)
+        const conta = data.correntistas.conta
+
+        const linesTable = conta
+          .map(conta => {
+            return `
+          <tr><td> ${conta.agencia} </td> <td> ${conta.tipo} </td> <td> ${conta.nome} </td>
+          <td> ${conta.numero} </td><tr>
+      `
+          })
+          .join('')
+
+        const chavesTile = Object.keys(conta[0])
+        var tr = '<tr>'
+        for (const i in chavesTile) {
+          tr += `<th>${chavesTile[i]}</th>`
+        }
+        tr += '</tr>'
+        const tabela = tr + linesTable
+
+        document.getElementById('tabela').innerHTML += tabela
+      }
+    </script>
+  </body>
+</html>

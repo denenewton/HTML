@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding= "UTF-8" ?>
+<correntistas>
+<!-- Neste documento a dados de dua pessoas-->
+  <conta>
+    <tipo>conta corrente</tipo>
+    <nome>Daniel dos Santos Araujo </nome>
+    <cpf>989.643.211-20</cpf>
+  </conta>
+  <conta>
+    <tipo>conta poupansa</tipo>
+    <nome>Fabricia Pereira da Silva</nome>
+    <cpf>989.344.220-20</cpf>
+  </conta>
+  <conta>
+    <tipo>conta poupansa</tipo>
+    <nome>Paulo Sinqueira Fernades</nome>
+    <cpf>989.755.325-20</cpf>
+  </conta>
+</correntistas>
+<!--?xml version="1.0" encoding="UTF-8"?>
+<note>
+  <to>Tove</to>
+  <from>Jani</Ffrom>
+  <heading>Reminder</heading>
+  <body>Don't forget me this weekend!</body>
+</note -->

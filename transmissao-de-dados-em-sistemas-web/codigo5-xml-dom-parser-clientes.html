@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <p id="result"></p>
+    <script molule="true" type="text/javascript">
+      var contas
+      fetch('clientes.json')
+        .then(response => {
+          return response.json()
+        })
+        .then(data => {
+          contas = data
+          //console.log(data.correntistas.conta)
+          conta = data.correntistas.conta
+          //document.getElementById('result').innerHTML += conta[0].nome
+        })
+
+     
+
+      //Cria um XML no formato de string JS
+      var xmlString =
+        '<?xml version="1.0" encoding="UTF-8" ?>  \
+<correntistas> \
+<conta agencia="0123-4"> <tipo>física</tipo> \
+<nome>José Maria</nome> <numero>000.000-00</numero> \
+</conta> \
+<conta agencia="5678-9"> <tipo>jurídica</tipo> \
+<nome>José Maria SA</nome> <numero>111.111-11</numero> \
+</conta> \
+</correntistas>'
+
+      //Converte a string acima para um documento XML válido
+      var parser = new DOMParser()
+      var xmlDoc = parser.parseFromString(xmlString, 'text/xml')
+
+      //Chamada a função responsável por coletar e exibir dados do XML
+      manipulaXML(xmlDoc)
+
+      function manipulaXML(xml) {
+         document.getElementById('result').innerHTML =
+         xml.getElementsByTagName('nome')[1].childNodes[0].nodeValue
+      }
+    </script>
+  </body>
+</html>

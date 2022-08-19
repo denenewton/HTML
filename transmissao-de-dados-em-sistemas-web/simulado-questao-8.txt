@@ -1,0 +1,62 @@
+
+	{ "pessoa":
+		[
+			{"nome" : "Claudia Rosa",
+			"salario": 40,
+			"aluno" : false},
+			{"nome" : "Silva Neto",
+			"salario": 33,
+			"aluno" : true},
+		]
+	}
+
+
+	pessoas:
+		pessoa:
+		-	nome : Claudia Rosa
+			salario: 40
+			aluno : false
+		-	nome : Silva Neto
+			salario: 33
+			aluno: true
+
+
+	<YAML>
+		<pessoas>
+			<pessoa>
+				<nome>Claudia Rosa</nome>
+				<salario>40</salario>
+				<aluno>false</aluno>
+			</pessoa>
+			<pessoa>
+				<nome>Silva Neto</nome>
+				<salario>33</salario>
+				<aluno>true</aluno>
+			</pessoa>			
+		</pessoas>
+	</YAML>
+	
+	
+	<pessoas>
+		<pessoa>
+			<nome>Claudia Rosa</nome>
+			<salario>40</salario>
+			<aluno>false</aluno>
+		</pessoa>
+		<pessoa>
+			<nome>Silva Neto</nome>
+			<salario>33</salario>
+			<aluno>true</aluno>
+		</pessoa>			
+	</pessoas>
+
+
+	"pessoas":{
+		"pessoa":
+		-	nome : Claudia Rosa
+			salario: 40
+			aluno : false
+		-	nome : Silva Neto
+			salario: 33
+			aluno: true
+	}		

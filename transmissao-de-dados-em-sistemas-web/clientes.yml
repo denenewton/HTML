@@ -1,0 +1,10 @@
+correntistas:
+  conta:
+  - agencia: 0123-4
+    tipo: física
+    nome: José Maria
+    numero: 000.000-00
+  - agencia: 5678-9
+    tipo: jurídica
+    nome: José Maria SA
+    numero: 111.111-11

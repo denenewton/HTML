@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 400px;
+        border-collapse: collapse;
+      }
+      td {
+        color: #444;
+        font-size: 16px;
+        padding: 0.5rem;
+        border: 1px solid #444;
+      }
+      th {
+        border: 1px solid #444;
+        background-color: #fff;
+        font-size: 18.5px;
+        padding: 0.5rem;
+        color: #444;
+        color: #444;
+      }
+      th.titleTable {
+        border: 1px solid #444;
+        background-color: #444;
+        font-size: 18.5px;
+        color: #dcdcdc;
+        padding: 0.5rem;
+      }
+      th {
+        background-color: #fff;
+        color: #444;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Correntistas</h1>
+
+    <table id="tabela">
+      <tr>
+        <th class="titleTable" colspan="4">Contas</th>
+      </tr>
+    </table>
+
+    <script>
+      var xmlHttp = new XMLHttpRequest()
+      xmlHttp.onreadystatechange = function () {
+        if (this.readyState === 4 && this.status === 200) {
+          var response = this.responseXML
+          console.log(response)
+          makeTable(response)
+        }
+      }
+      xmlHttp.open('GET', 'clientes.xml', true)
+      xmlHttp.send()
+
+      const makeTable = resp => {
+        conta = resp.getElementsByTagName('conta')[0]
+        child_nodes = conta.childNodes
+        var tr = '<tr>'
+
+        for (const i in child_nodes) {
+          if (child_nodes[i].nodeType === 1) {
+            //console.log(child_nodes[i].firstChild.nodeValue)
+            tr += ` <th> ${child_nodes[i].nodeName}</th>`
+          }
+        }
+        tr += '</tr>'
+
+        conta = resp.getElementsByTagName('conta')
+        for (const i in conta) {
+          child_nodes = conta[i].childNodes
+          tr += '<tr>'
+          for (const j in child_nodes) {
+            if (child_nodes[j].nodeType === 1) {
+              tr += `<td> ${child_nodes[j].firstChild.nodeValue}</td>`
+            }
+          }
+          tr += '</tr>'
+        }
+        document.getElementById('tabela').innerHTML += tr
+      }
+    </script>
+  </body>
+</html>

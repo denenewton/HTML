@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Parser YAML em Javascript</title>
+	<!-- Incorporando a biblioteca (de terceiros) que faz o parser yaml => javascript -->
+	<script type="text/javascript" src="yaml.js"></script>
+</head>
+<body>
+<p id="resultado"></p>
+<script type="text/javascript">
+
+//Recuperando o conteúdo do arquivo yaml e, através do parser, transformando-o em um objeto JS
+objJavascript = YAML.load('clientes.yml');
+
+//console.dir(objJavascript);
+
+//Armazenando a propriedade 'conta', do objeto JS, que é um array, em uma nova variável
+var arrayContas = objJavascript.correntistas.conta;
+
+//Percorrendo o array de contas, com a função nativa JS map e exibindo os valores no elemento HTML #resultado
+arrayContas.map(function(conta) { 
+  document.getElementById("resultado").innerHTML += 'Agência: ' + conta.agencia + ' Tipo: ' + conta.tipo + ' Nome: ' + conta.nome + ' Número: ' + conta.numero + '<br/>';
+});
+
+</script>
+</body>
+</html>
