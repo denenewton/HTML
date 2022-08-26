@@ -1,0 +1,62 @@
+///////////////// Header Section //////////////////
+.header {
+    height: calc(100vh - 1rem);
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(0, 0, 0, 0.812),
+        rgba(25, 24, 24, 0.795)
+      ),
+      url(../image/filmes.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    margin-top: -1rem;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+   
+  }
+  .logo-box {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+  }
+  
+  .logo {
+  }
+  .text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+  
+    backface-visibility: hidden;
+    margin-bottom: 50px;
+  }
+  
+  .heading-primary-main {
+    display: block;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 15px;
+    line-height: 1.25;
+    margin-bottom: 1rem;
+    animation-name: moveLeft;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    // animation-delay: 2s;
+  }
+  .heading-primary-sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 10px;
+    animation: moveRight 1.5s ease-out;
+  }
+  
+  

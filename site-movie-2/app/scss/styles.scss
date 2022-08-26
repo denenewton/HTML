@@ -1,0 +1,122 @@
+@import "parts/globals";
+@import "parts/animations";
+@import "parts/components";
+@import "parts/header";
+
+main {
+  
+  max-width: 100%;
+  background-color: transparent;
+  border-radius: 5px;
+  padding-top: 12rem;
+  margin-top: -11rem;
+
+  #my-best-movies h2,h5{
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    word-spacing: 1.5px;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+  }
+  
+  .movies {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem 0rem;
+    height: 200px;
+    margin-bottom: -1.7rem;
+    overflow-x: scroll;
+
+    h3#not-found {
+      width: 100%;
+      text-align: center;
+      color: #fff;
+    }
+
+    @include movie(250px, 145px);
+  }
+  ::-webkit-scrollbar {
+    background-color: transparent;
+  }
+}
+
+main {
+  .search-movies {
+    max-width: 968px;
+    margin: 0 auto;
+
+    .movies {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1rem;
+
+      height: auto;
+
+      @media screen and(max-width:1440px) {
+        @include movie(229px, 139px);
+      }
+      @media screen and(max-width:968px) {
+        @include movie(287px, 164px);
+      }
+      @media screen and(max-width:830px) {
+        @include movie(349px, 199px);
+      }
+      @media screen and(max-width:800px) {
+        @include movie(350px, 199px);
+      }
+      @media screen and(max-width:768px) {
+        @include movie(352px, 200px);
+      }
+      @media screen and(max-width:700px) {
+        @include movie(317px, 200px);
+      }
+
+      @media screen and(max-width:545px) {
+        @include movie(470px, 250px);
+      }
+
+      @media screen and(max-width:500px) {
+        @include movie(459px, 245px);
+      }
+      @media screen and(max-width:480px) {
+        @include movie(419px, 245px);
+      }
+
+      @media screen and(max-width:425px) {
+        @include movie(399px, 239px);
+      }
+      @media screen and(max-width:393px) {
+        @include movie(357px, 200px);
+      }
+      @media screen and(max-width:390px) {
+        @include movie(357px, 200px);
+      }
+      @media screen and(max-width:375px) {
+        @include movie(343px, 200px);
+      }
+
+      @media screen and(max-width:355px) {
+        @include movie(228px, 115px);
+      }
+      @media screen and(max-width:325px) {
+        @include movie(300px, 175px);
+      }
+      @media screen and(max-width:280px) {
+        @include movie(260px, 165px);
+      }
+    }
+  }
+  text-align: center;
+  h2.search-movies {
+    padding: 1rem;
+    color: #fff;
+  }
+  #search {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+  }
+}

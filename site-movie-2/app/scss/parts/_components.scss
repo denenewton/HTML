@@ -1,0 +1,104 @@
+/////////button for Home Section //////////
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 14px 38px;
+  border-radius: 10rem;
+  position: relative;
+  transition: all 0.2s;
+}
+.btn-white {
+  background-color: #fff;
+  color: #777;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+}
+.btn::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+
+.btn::after {
+  background-color: #fff;
+}
+.btn:hover::after {
+  transform: scaleX(1.3) scaleY(1.2);
+  opacity: 0;
+}
+
+////////////// Component Movie /////////////////
+
+@mixin movie ($width, $height){
+  .movie {
+    height: auto;
+    .figure {
+      max-width: $width;
+      img {
+        width: $width;
+        height:  $height;
+        border-radius: 5px;
+        object-fit: fill;
+      }
+      position: relative;
+      
+    }
+    .caption {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.85);
+      border-radius: 4px;
+      height:$height;
+      width:$width;
+      position: absolute;
+      color: #fff;
+      font-size: 1.5rem;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      box-sizing: border-box;
+      transition: opacity 0.2s;
+      h6{
+        display: block;
+        font-size:1rem ;
+        letter-spacing: .9px;
+        text-transform: capitalize;
+      }
+      p{
+        letter-spacing: 1px;
+        span{
+          font-weight: 700;
+        }
+        font-weight: 300;
+        display: block;
+        font-size: .7rem;
+        text-transform: capitalize;
+      }
+    }
+    .caption:hover {
+      opacity: 1;
+    }
+  }
+}
+
+  
