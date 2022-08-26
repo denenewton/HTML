@@ -5,7 +5,7 @@ Meus estudos em Html e WebDesign
 
 [Site-movie](https://denenewton.github.io/HTML/site-movie)
 
-[Site-movie](https://denenewton.github.io/HTML/site-movie-2/dist)
+[Site-movie-2](https://denenewton.github.io/HTML/site-movie-2/dist)
 
 [Exemple-listas](https://denenewton.github.io/HTML/Html/Listas)
 
