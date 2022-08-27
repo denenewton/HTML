@@ -758,6 +758,114 @@
      "year": "2009",
      "comments": "Jack, a taxi driver, finds himself helping two aliens who appear to look like human children and claim that they trying to save Earth and themselves from Siphon, a dangerous killer from outer space.",
      "createdAt": "2022-07-31T22:42:14.471Z"
+    },
+    {
+      "_id": "630aa148b370dba754d85268",
+      "name": "The Proposal",
+      "url": "https://cloclo1.cloud.mail.ru/weblink/view//Zs2x/9FZTLRcai",
+      "image": "./image/the-proposal.jpeg",
+      "category": "romance",
+      "director": "Anne Fletcher",
+      "year": "2009",
+      "comments": "Margaret Tate é uma poderosa editora de livros que corre o risco de ser deportada para o Canadá, seu país natal. Para poder permanecer em Nova York, ela diz estar noiva de Andrew, seu assistente. O jovem aceita ajudá-la, mas impõe algumas condições, entre elas ir para o Alasca e conhecer sua família excêntrica. Com um oficial da imigração sempre à espreita, Margaret e Andrew têm que seguir o plano de casamento apesar de diversos problemas.",
+      "createdAt": "2022-08-27T22:57:12.417Z",
+      "__v": 0
+    },
+    {
+      "_id": "630aa254b370dba754d8526a",
+      "name": "Uma Noite Fora de Série",
+      "url": "https://cloclo59.cloud.mail.ru/weblink/view//HSkk/yvBf4pnd2",
+      "image": "./image/uma-noite-fora-de-serie.jpeg",
+      "category": "comedia",
+      "director": "Shawn Levy",
+      "year": "2010",
+      "comments": "Phil and Claire lead a routine, almost dull life of a suburban couple with kids. An attempt to spice up the date night with a bit of excitement and glamour turns into more thrills than they asked for.",
+      "createdAt": "2022-08-27T23:01:40.058Z",
+      "__v": 0
+    },
+    {
+      "_id": "630aa338b370dba754d8526c",
+      "name": "Legally Blonde 2",
+      "url": "https://cloclo57.cloud.mail.ru/weblink/view//iWBk/njR6oNhKt.",
+      "image": "./image/legalmente-loira-2.jpeg",
+      "category": "comedia",
+      "director": "Rolfe Kent",
+      "year": "2003",
+      "comments": "Elle postpones her wedding plans and sets off to Washington to support the staff of a Representative and enable the passing of a bill which bans animal testing.",
+      "createdAt": "2022-08-27T23:05:28.328Z",
+      "__v": 0
+    },
+    {
+      "_id": "630aa412b370dba754d8526e",
+      "name": "Four Christmases",
+      "url": "https://cloclo56.cloud.mail.ru/weblink/view//wbKG/5yV6G5J8y",
+      "image": "./image/four-christmases.jpeg",
+      "category": "comedia",
+      "director": "Seth Gordon",
+      "year": "2009",
+      "comments": "Lovers Brad and Kate plan to go on a vacation to Fiji to spend the holidays. However, when their vacation plan is foiled, they are forced to visit all four of their divorced parents for Christmas.",
+      "createdAt": "2022-08-27T23:09:06.241Z",
+      "__v": 0
+    },
+    {
+      "_id": "630aa502b370dba754d85270",
+      "name": "Hancock",
+      "url": "https://cloclo21.cloud.mail.ru/weblink/view//qHcE/zxuKQd2AJ",
+      "image": "./image/hancock.jpeg",
+      "category": "açao",
+      "director": "Peter Berg",
+      "year": "2008",
+      "comments": "John Hancock is a reckless superhero whose chaotic efforts have made him wildly unpopular. However, his life changes when a PR expert offers to help him improve his public image.",
+      "createdAt": "2022-08-27T23:13:06.306Z",
+      "__v": 0
+    },
+    {
+      "_id": "630aa63db370dba754d85272",
+      "name": "Superbad: É Hoje ",
+      "url": "https://cloclo55.cloud.mail.ru/weblink/view//a784/jsXG4AHsJ",
+      "image": "./image/superbad.jpeg",
+      "category": "comedia",
+      "director": "Greg Mottola",
+      "year": "2007",
+      "comments": "Two high school boys want to enjoy their lives to the fullest before they go to different colleges. Unfortunately, their debauchery lands them in trouble.",
+      "createdAt": "2022-08-27T23:18:21.870Z",
+      "__v": 0
+    },
+    {
+      "_id": "630aa70fb370dba754d85274",
+      "name": "Lizzie McGuire: Um Sonho popstar ",
+      "url": "https://cloclo52.cloud.mail.ru/weblink/view//bDra/Liqk8gDR4",
+      "image": "./image/Lizzie_mcbuire.jpeg",
+      "category": "romance",
+      "director": "Jim Fall",
+      "year": "2003",
+      "comments": "While on a holiday in Rome, a teenager, Elizabeth, is mistaken to be a pop star named Isabella. However, when the time comes, she must choose between her new glamorous lifestyle and returning home.",
+      "createdAt": "2022-08-27T23:21:51.894Z",
+      "__v": 0
+    },
+    {
+      "_id": "630aa88db370dba754d85276",
+      "name": "Toy Story",
+      "url": "https://cloclo55.cloud.mail.ru/weblink/view//hWeU/G9e1M5Dqa",
+      "image": "./image/Toy-Story.jpeg",
+      "category": "comedia",
+      "director": "John Lasseter",
+      "year": "1995",
+      "comments": "Andy's favourite toy, Woody, is worried that after Andy receives his birthday gift, a new toy called Buzz Lightyear, his importance may get reduced. He thus hatches a plan to eliminate Buzz.",
+      "createdAt": "2022-08-27T23:28:13.715Z",
+      "__v": 0
+    },
+    {
+      "_id": "630aaa3ab370dba754d85278",
+      "name": "De Volta para o Futuro  ",
+      "url": "https://cloclo50.cloud.mail.ru/weblink/view//4pDs/x5hDaT8YJ",
+      "image": "./image/de-volta-para-futuro.jpeg",
+      "category": "ficção",
+      "director": "Robert Zemeckis",
+      "year": "1985",
+      "comments": "Marty travels back in time using an eccentric scientist's time machine. However, he must make his high-school-aged parents fall in love in order to return to the present.",
+      "createdAt": "2022-08-27T23:35:22.767Z",
+      "__v": 0
     }
    ]
   
