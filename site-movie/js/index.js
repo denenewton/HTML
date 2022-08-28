@@ -1,10 +1,11 @@
-import { dataMovies } from './data.js'
+import { movies}  from './data.js'
 import * as component from './components.js'
 
 $('.changePages').hide()
 
+
 $(document).ready(async function () {
-  var data = await dataMovies()
+  var data = movies
   $('.changePages').show()
   $('#search').focus()
   var page = 1
