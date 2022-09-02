@@ -3,9 +3,9 @@ Meus estudos em Html e WebDesign
 
 ## Links de Acesso Rapido
 
-[Site-movie](https://denenewton.github.io/HTML/site-movie)
+[Site-movie](https://denenewton.github.io/HTML/site-moviedsa)
 
-[Site-movie-2](https://denenewton.github.io/HTML/site-movie-2/dist)
+[Site-movie-2](https://denenewton.github.io/HTML/site-movie-2/distdas)
 
 [Exemple-listas](https://denenewton.github.io/HTML/Html/Listas)
 
