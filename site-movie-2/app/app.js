@@ -51,7 +51,7 @@ function paginate(data, page, limt) {
 
 search.onchange = function () {
   let termo = this.value;
-  let expressaoReg = new RegExp(termo.trim(), "g");
+  let expressaoReg = new RegExp(termo.trim(), "i");
 
   const results = movies.filter(elem => {
     return expressaoReg.test(elem.name);
