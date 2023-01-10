@@ -21,9 +21,9 @@ function griMovieHTML(movie) {
       return `    
       <li><a href=""></a>
       <a class="links" href="../details/?id=${mov.id}">
-      <img src="${base_img}${mov.poster_path}" alt="" />
+      <img src="" alt="" />
       </a>
-      <span>${mov.title}</span>
+      <span>${mov.name}</span>
       </li>
       `;
     })
