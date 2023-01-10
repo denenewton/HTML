@@ -1,13 +1,12 @@
 import { API_KEY, base_img } from '../js/key.js';
+// `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=jumanj`
 
 function renderHome() {
-  fetch(
-    `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=jumanj`
-  )
+  fetch("../js/data.json")
     .then(resp => resp.json())
     .then(data => {
-      setMovie(data.results);
-      console.log(data.results.id);
+      setMovie(data);
+      console.log(data);
     });
 }
 function setMovie(data) {
