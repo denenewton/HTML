@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'League Spartan', sans-serif;
+  color: #fff;
+  background-color: #000;
+  padding-top: 9rem;
+}
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+div.container {
+  position: relative;
+  background-color: #000;
+  padding-top: 2rem;
+  max-width: 1014px;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+}
+div.container ul {
+  display: grid;
+  list-style: none;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  column-gap: 3rem;
+  row-gap: 4rem;
+}
+div.container li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div.container li img {
+  width: 180px;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+div.container li span {
+  font-weight: bold;
+  text-align: center;
+}
+div.container li a {
+  transition: all 0.3s;
+}
+div.container li a:hover {
+  transform: scale(1.05);
+}
+header{
+  display: flex; 
+  justify-content: center;
+  background-color:rgba(0, 0, 0, 0.45);
+  position: fixed;
+  top: 0;
+  z-index: 14;
+  width: 100%;
+}
+header h1{
+  font-size: 2.25rem;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  height: 6rem;
+  width: 1024px;
+  align-items: center;
+  padding: 0 2rem;
+  
+}
+input#search{
+  height: 1.7rem;
+  font-family: inherit;
+  padding-left: .5rem;
+}
